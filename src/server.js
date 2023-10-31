@@ -88,7 +88,7 @@ function createCob(expiration = 10000, value = "1.00", description = "Café", to
       "valor": {
         "original": `${value}`
       },
-      "chave": "ccb89a63-285e-4ebc-88d2-c58fe90364e4",
+      "chave": `${process.env.PIX_KEY}`,
       "solicitacaoPagador": `${description}`
     }
   }

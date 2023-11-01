@@ -50,12 +50,6 @@ app.get('/', async (request, response) => {
   response.send(qrcode)
 })
 
-app.get('/teste', (request, response) => {
-  response.json({
-    "teste": "olá" 
-  })
-})
-
 function getAuth() {
   config = {...config, ...{
     method: "POST",
